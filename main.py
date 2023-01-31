@@ -83,7 +83,7 @@ number_of_questions=len(questions)
 number_of_terminology=len(terminology)
 count=1
 
-user_input=input("Do you want teminoliogy(t) , all Questions (non Terminology) (a) or a subset (s)")
+user_input=input("Do you want terminology(t) , all Questions(non Terminology) (a) or a subset(s)")
 
 if user_input=="t":
 
