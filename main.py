@@ -152,7 +152,7 @@ number_of_questions=len(questions)
 number_of_terminology=len(terminology)
 count=1
 
-user_input=input("Do you want terminology(t) , all Questions(non Terminology) (a) or a subset(s)")
+user_input=input("Do you want terminology(t) , All non Terminology questions (a) or a subset of non terminology (s) or could i tempt you into a random 10 questions (r)")
 sleep_time=int(input("please enter the number of seconds you want to sleep for between question and answer?"))
 
 
@@ -173,6 +173,27 @@ if user_input=="t":
         print()
 
 
+elif user_input=="r":
+
+    os.system('clear')
+    large_list=questions +  terminology
+    random.shuffle(large_list)
+    needed_questions=10
+    quesions_asked=0
+    for i in range(needed_questions):
+        quesions_asked+=1
+        print ("Quesion - ",quesions_asked,"/",needed_questions)
+        q_and_a=large_list.pop()
+        print("=========")
+        print ("# Question - ", q_and_a[0])
+        time.sleep(sleep_time)
+        print ("# Answer - ", q_and_a[1])
+        print()
+        print()
+        print()
+        input("....press enter to continue.......")
+        
+    
 elif user_input=="a":
 
     #breakpoint()
