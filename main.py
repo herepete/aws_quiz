@@ -147,12 +147,14 @@ questions=[
 import random
 random.shuffle(questions)
 random.shuffle(terminology)
-sleep_time=1
+#sleep_time=1
 number_of_questions=len(questions)
 number_of_terminology=len(terminology)
 count=1
 
 user_input=input("Do you want terminology(t) , all Questions(non Terminology) (a) or a subset(s)")
+sleep_time=int(input("please enter the number of seconds you want to sleep for between question and answer?"))
+
 
 if user_input=="t":
 
