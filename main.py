@@ -209,29 +209,107 @@ questions=[
 ["What enables you to quickly discover all of the scalable resources underlying your application and set up application scaling in minutes using built-in scaling recommendations.?","AWS Auto scaling","EC2"],
 ["Why would you use an EC2 auto scaliing group with a website?","a cost-effective approach for ensuring the website is highly available","EC2"],
 ["What 4 core types of autoscaling exist?","1)Sceulded scaling policy - according to predictable load changes\n2)Predictive scaling - uses daily and weekly trends to determine when to scale.\n3target tracking scaling policy )\n4) step scaling policy - will launch resources in response to demand, this will not ensure the resource are ready at the right time as there will be a delay.","EC2"],
-#["",""],
+["What do Ops works and Elastic beanstalk have in common?","can be used to deploy applications on aws","Deployment"],
+["Which service can be used to privatley store and manage versions of source code?","Codecommit","Deployment"],
+["What is CloudEndure?","CloudEndure Disaster Recovery enables organizations to quickly and easily shift their disaster recovery strategy to AWS from existing physical or virtual data centers, private clouds, or other public clouds, in addition to supporting cross-region / cross-AZ disaster recovery in AWS.","Deployment"],
+["What is aws outposts?","AWS Outposts is a fully managed service that extends AWS infrastructure, services, APIs, and tools to customer premises. By providing local access to AWS managed infrastructure","Deployment"],
+#["","","Deployment"],
 #["",""],
 ]
+
+services=[
+["Amazon Athena","Analyze petabyte-scale data where it lives with ease and flexibility"],
+["Amazon Kinesis","Easily collect, process, and analyze video and data streams in real time"],
+["Amazon QuickSight","a business  intelligence reporting tool. Similar to tableau,"],
+["Amazon Simple Notification Service (Amazon SNS)","Amazon Simple Notification Service (Amazon SNS)\n\nis a flexible, fully managed  pub-sub messaging service. What that  means is that you can create a topic,  and users can subscribe to that topic, and  when you publish a message to that topic,  the users that have subscribed to that topic  will receive that message, it can also be used  for push notifications to mobile devices"],
+["Amazon Simple Queue Service (Amazon SQS)","Amazon Simple Queue Service (Amazon SQS)\n\nis a fully managed message queuing service and  that makes it easy to decouple your applications  from demand.\n\nWhat that means is that it  allows messages to build up in a queue until the processing server that processes  those messages can catch up with demand."],
+["AWS Batch","Batch processing, ML model training, and analysis at any scale"],
+["Amazon EC2",""],
+["AWS Elastic Beanstalk","an easy-to-use service for deploying and scaling web applications and services\n\n developed with Java, NET, PHP, Node. js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS."],
+["AWS Lambda","AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume—there is no charge when your code is not running"],
+["Amazon Lightsail","Build applications and websites fast with low-cost, pre-configured cloud resources"],
+["Amazon WorkSpaces","is a fully managed secure desktop as a service."],
+["Amazon Elastic Container Service (Amazon ECS)","Run highly secure, reliable, and scalable containers"],
+["Amazon Elastic Kubernetes Service (Amazon EKS)","The most trusted way to start, run, and scale Kubernetes"],
+["AWS Fargate","Serverless compute for containers\n\nIt differs from EC2 in that - Amazon EC2 manages or deploys your own EC2 instances to effectively run applications. Fargate AWS allows you to run containers without the need for EC2 instances. "],
+["Amazon Aurora","a fully managed MySQL- and PostgreSQL-compatible relational database built for the cloud that combines the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open source databases."],
+["Amazon DynamoDB","Amazon no sql database"],
+["Amazon ElastiCache","Unlock microsecond latency and scale with in-memory caching"],
+["Amazon RDS","Amazon Relational Database Service (RDS)\n\nA relational database is a collection of data items with pre-defined relationships between them. These items are organized as a set of tables with columns and rows.\n\n if you want full control, you need extra features i.e Oracle feature deploy on ec2\n\nAdvatanges include \n\nits highly optimized, \nno dba needed,\nrds deals with backupsi\nrds deals with patching , \nnyou deal with optimization and tuning rather than database admin"],
+["Amazon Redshift","Amazon Redshift uses SQL to analyze structured and semi-structured data across data warehouses, operational databases, and data lakes, using AWS-designed hardware and machine learning to deliver the best price performance at any scale"],
+["AWS CodeBuild","Build and test code with automatic scaling"],
+["AWS CodeCommit","Is a git repository just like  GitHub, and it's running in the AWS cloud"],
+["AWS CodeDeploy","Automate code deployment to maintain application uptime"],
+["AWS CodePipeline","A CI/CD"],
+["AWS CodeStar","Quickly develop, build, and deploy applications on AWS"],
+["Amazon Connect","With Amazon Connect, you can set up a contact center in minutes that can scale to support millions of customers."],
+["AWS Auto Scaling","Application scaling to optimize performance and costs\n\nAWS Auto Scaling monitors your applications and automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost. Using AWS Auto Scaling, it’s easy to setup application scaling for multiple resources across multiple services in minutes"],
+["AWS Budgets","AWS Budgets lets you set custom cost and usage budgets that alert you when your budget thresholds are exceeded (or forecasted to exceed)."],
+["AWS CloudFormation","provides a common language to describe and provision all the infrastructure resources in your environment in a safe, repeatable way"],
+["AWS CloudTrail","Track user activity and API usage, good for security"],
+["Amazon CloudWatch","Observe and monitor resources and applications on AWS, on premises, and on other clouds"],
+["AWS Config","Record and evaluate configurations of your AWS resources"],
+["AWS Cost and Usage Report","contains the most comprehensive set of cost and usage data available. \nYou can use Cost and Usage Reports to publish your AWS billing reports to an Amazon Simple Storage Service (Amazon S3) bucket that you own. \nYou can receive reports that break down your costs by the hour, day, or month, by product or product resource, or by tags that you define yourself."],
+["Amazon EventBridge (Amazon CloudWatch Events)","Amazon EventBridge is a serverless event bus service that makes it easy to connect your applications with data from a variety of sources. \nEventBridge delivers a stream of real-time data from your own applications, software-as-a-service (SaaS) applications, and AWS services and routes that data to targets such as AWS Lambda. \nYou can set up routing rules to determine where to send your data to build application architectures that react in real time to all of your data sources. \nEventBridge enables you to build event-driven architectures that are loosely coupled and distributed."],
+["AWS License Manager","Manage your software licenses and fine-tune licensing costs"],
+["AWS Managed Services","AWS Managed Services (AMS) helps you adopt AWS at scale and operate more efficiently and securely. \nWe leverage standard AWS services and offer guidance and execution of operational best practices with specialized automations, skills, and experience that are contextual to your environment and applications"],
+["AWS Organizations","Centrally manage your environment as you scale your AWS resources"],
+["AWS Secrets Manager","Centrally manage the lifecycle of secrets\nAWS Secrets Manager helps you manage, retrieve, and rotate database credentials, API keys, and other secrets throughout their lifecycles."],
+["AWS Systems Manager","Gain operational insights into resources on AWS, on premises, and on other clouds"],
+["AWS Systems Manager Parameter Store","provides secure, hierarchical storage for configuration data management and secrets management. \nYou can store data such as passwords, database strings, Amazon Machine Image (AMI) IDs, and license codes as parameter values. You can store values as plain text or encrypted data. \nYou can reference Systems Manager parameters in your scripts, commands, SSM documents, and configuration and automation workflows by using the unique name that you specified when you created the parameter"],
+["AWS Trusted Advisor","Reduce costs, improve performance, improve security"],
+["Amazon API Gateway","Create, maintain, and secure APIs at any scale"],
+["Amazon CloudFront","Amazon CloudFront is a content delivery network (CDN) service that helps you distribute your static and dynamic content quickly and reliably with high speed"],
+["AWS Direct Connect","AWS Direct Connect is a cloud service that links your network directly to AWS to deliver consistent, low-latency performance."],
+["Amazon Route 53","dns"],
+["Amazon VPC","Amazon Virtual Private Cloud (Amazon VPC) enables you to launch AWS resources into a virtual network that you've defined."],
+["AWS Artifact","Access AWS and ISV security and compliance reports"],
+["AWS Certificate Manager (ACM)",""],
+["AWS CloudHSM","Provision and manage SSL/TLS certificates with AWS services and connected resources"],
+["Amazon Cognito","Implement secure, frictionless customer identity and access management that scales\n you can add user sign-up and sign-in features and control access to your web and mobile applications.\nAmazon Cognito provides an identity store that scales to millions of users, supports social and enterprise identity federation, and offers advanced security features to protect your consumers and business.\n Built on open identity standards,\n Amazon Cognito supports various compliance regulations and integrates with frontend and backend development resources."],
+["Amazon Detective","Analyze and visualize security data to investigate potential security issues"],
+["Amazon GuardDuty","Protect your AWS accounts with intelligent threat detection"],
+["AWS Identity and Access Management (IAM)","Securely manage identities and access to AWS services and resources"],
+["Amazon Inspector","Automated and continual vulnerability management at scale that continually scans AWS workloads for software vulnerabilities and unintended network exposure."],
+["AWS License Manager","Manage your software licenses and fine-tune licensing costs"],
+["Amazon Macie","Discover and protect your sensitive data at scale.\n\nAmazon Macie is a data security service that uses machine learning (ML) and pattern matching to discover and help protect your sensitive data."],
+["AWS Shield","Maximize application availability and responsiveness with managed DDoS protection"],
+["AWS WAF","Protect your web applications from common exploits"],
+["AWS Backup","AWS Backup is a fully-managed service that makes it easy to centralize and automate data protection across AWS services, in the cloud, and on premises.\nUsing this service, you can configure backup policies and monitor activity for your AWS resources in one place."],
+["Amazon Elastic Block Store (Amazon EBS)","Easy to use, high performance block storage at any scale"],
+["Amazon Elastic File System (Amazon EFS)","Serverless, fully elastic file storage\n\nautomatically grows and shrinks as you add and remove files with no need for management or provisioning."],
+["Amazon S3","Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance."],
+["Amazon S3 Glacier","Long-term, secure, durable storage classes for data archiving at the lowest cost and milliseconds access"],
+["AWS Snowball Edge","AWS Snowball Edge is a type of Snowball device with on-board storage and compute power for select AWS capabilities. Snowball Edge can do local processing and edge-computing workloads in addition to transferring data between your local environment and the AWS Cloud."],
+["AWS Storage Gateway","AWS Storage Gateway is a set of hybrid cloud storage services that provide on-premises access to virtually unlimited cloud storage."],
+
+]
+
 
 
 
 import random
 random.shuffle(questions)
 random.shuffle(terminology)
+random.shuffle(services)
 #sleep_time=1
 number_of_questions=len(questions)
 number_of_terminology=len(terminology)
+number_of_services=len(services)
 count=1
 
-user_input=input("Do you want terminology(t) , All non Terminology questions (a) or a subset of non terminology (s) or could i tempt you into a random 10 questions (r)")
+print (f"Do you want a test on services(s) , Questions={number_of_services}")
+print (f"a more focused set of questions (f) ")
+
+user_input=input("")
 sleep_time=int(input("please enter the number of seconds you want to sleep for between question and answer?"))
 
 
-if user_input=="t":
+if user_input=="s":
 
-    for i in terminology:
+    for i in services:
         os.system('clear')
-        print ("Quesion - ",count,"/",number_of_terminology)
+        print ("Quesion - ",count,"/",number_of_services)
         count+=1
         print("=========")
         print ("# Question - ", i[0])
@@ -243,46 +321,7 @@ if user_input=="t":
         input("....press enter to continue.......")
         print()
 
-
-elif user_input=="r":
-
-    os.system('clear')
-    large_list=questions +  terminology
-    random.shuffle(large_list)
-    needed_questions=10
-    quesions_asked=0
-    for i in range(needed_questions):
-        quesions_asked+=1
-        print ("Quesion - ",quesions_asked,"/",needed_questions)
-        q_and_a=large_list.pop()
-        print("=========")
-        print ("# Question - ", q_and_a[0])
-        time.sleep(sleep_time)
-        print ("# Answer - ", q_and_a[1])
-        print()
-        print()
-        print()
-        input("....press enter to continue.......")
-        
-    
-elif user_input=="a":
-
-    #breakpoint()
-    for i in questions:
-        os.system('clear')
-        print ("Quesion - ",count,"/",number_of_questions)
-        count+=1
-        print("=========")
-        print ("# Question - ", i[0])
-        time.sleep(sleep_time)
-        print ("# Answer - ", i[1])
-        print()
-        print()
-        print()
-        input("....press enter to continue.......")
-        print()
-elif user_input=="s":
-    print ("S pressed")
+elif user_input=="f":
     list_of_sections=[]
     for i in questions:
         try:
