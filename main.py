@@ -213,7 +213,18 @@ questions=[
 ["Which service can be used to privatley store and manage versions of source code?","Codecommit","Deployment"],
 ["What is CloudEndure?","CloudEndure Disaster Recovery enables organizations to quickly and easily shift their disaster recovery strategy to AWS from existing physical or virtual data centers, private clouds, or other public clouds, in addition to supporting cross-region / cross-AZ disaster recovery in AWS.","Deployment"],
 ["What is aws outposts?","AWS Outposts is a fully managed service that extends AWS infrastructure, services, APIs, and tools to customer premises. By providing local access to AWS managed infrastructure","Deployment"],
-#["","","Deployment"],
+["What service enables userts to monitor for specific phrases, value or patterns and set up alarms based on metrics? ","Amazon Cloudwatch logs","Cloudwatch"],
+["How can you monitor the operational health of an entire system of AWS cloud resources to optimize cost and resource usage? ","Amazon Cloudwatch","Cloudwatch"],
+["What allows access to an S3 bucket from an ec2 instance without accessing the internt","VPC endpoint\n\n A VPC endpoint enables customers to privately connect to supported AWS services and VPC endpoint services powered by AWS PrivateLink. \nAmazon VPC instances do not require public IP addresses to communicate with resources of the service.\n Traffic between an Amazon VPC and a service does not leave the Amazon network. ","VPC"],
+["What must be attached to a VPC to enable inbound internet traffic?","Internet gateway","VPC"],
+["What 2 compontents are needed to build a site to site vpn?","Customer Gateway & Virtual Private Gateway","VPC"],
+["What 3 items combine to offer the best DDOS protection?","1)Aws Shield \n2)Cloudfront \n3)Route 53","VPC"],
+["What 2 items can be used to extend an on premises VPN to the AWS network?","1)AWS Direct Connect \n2)AWS VPN","VPC"],
+["What is a use case for VPC peering?","a company with a single aws region with thousands of VPC in various account to interconnect and simpfily managment and cost\n\nA VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them privately. Instances in either VPC can communicate with each other as if they are within the same network. You can create a VPC peering connection between your own VPCs, with a VPC in another AWS account, or with a VPC in a different AWS Region.","Deployment"],
+["What are some differences between a VPC VPN & Direct connect?","VPC VPN - uses IPSec to establish an encrypted network between you intranet and amazon vpc over the internet\nDirect connection does not involve the internet instead it uses dedicated private network connections between your intranet and a Amazon VPC","Deployment"],
+["Which 2 services can be used to block network traffic to an instance","1)Security Groups-Act as a Firewall for associated EC2 instaces controlling both inbound and outbound traffic at the instance level\n2)Network ACL-control inbound and outbound traffic at the subnet level\nboth act in effect as firewalls","Deployment"],
+["Which level does the Network ACL operate at?","Subnet level (As oppose to Security groups which are insatnce level)","Deployment"],
+["Which level does the Security Group operate at?","instance level (as oppose to Network ACL which is the subnet level)","Deployment"],
 #["",""],
 ]
 
@@ -282,6 +293,13 @@ services=[
 ["Amazon S3 Glacier","Long-term, secure, durable storage classes for data archiving at the lowest cost and milliseconds access"],
 ["AWS Snowball Edge","AWS Snowball Edge is a type of Snowball device with on-board storage and compute power for select AWS capabilities. Snowball Edge can do local processing and edge-computing workloads in addition to transferring data between your local environment and the AWS Cloud."],
 ["AWS Storage Gateway","AWS Storage Gateway is a set of hybrid cloud storage services that provide on-premises access to virtually unlimited cloud storage."],
+#["What service enables userts to monitor for specific phrases, value or patterns and set up alarms based on metrics? ","Amazon Cloudwatch logs","Cloudwatch"]
+#["How can you monitor the operational health of an entire system of AWS cloud resources to optimize cost and resource usage? ","Amazon Cloudwatch","Cloudwatch"]
+#["AWS Storage Gateway","""],
+#["AWS Storage Gateway","AWS Storage Gateway is a set of hybrid cloud storage services that provide on-premises access to virtually unlimited cloud storage."],
+#["AWS Storage Gateway","AWS Storage Gateway is a set of hybrid cloud storage services that provide on-premises access to virtually unlimited cloud storage."],
+#["AWS Storage Gateway","AWS Storage Gateway is a set of hybrid cloud storage services that provide on-premises access to virtually unlimited cloud storage."],
+#["AWS Storage Gateway","AWS Storage Gateway is a set of hybrid cloud storage services that provide on-premises access to virtually unlimited cloud storage."],
 
 ]
 
