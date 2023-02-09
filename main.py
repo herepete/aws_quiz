@@ -230,43 +230,43 @@ questions=[
 
 services=[
 ["Amazon Athena","Analyze petabyte-scale data where it lives with ease and flexibility"],
-["Amazon Kinesis","Easily collect, process, and analyze video and data streams in real time"],
+["Amazon Kinesis","Easily collect, process, and analyze video and data streams in real time\n\nFor Example a Social Media Stream which alongside Lambda could take out the hastags put in a  DB and make them avaliable for users to browse"],
 ["Amazon QuickSight","a business  intelligence reporting tool. Similar to tableau,"],
 ["Amazon Simple Notification Service (Amazon SNS)","Amazon Simple Notification Service (Amazon SNS)\n\nis a flexible, fully managed  pub-sub messaging service. What that  means is that you can create a topic,  and users can subscribe to that topic, and  when you publish a message to that topic,  the users that have subscribed to that topic  will receive that message, it can also be used  for push notifications to mobile devices"],
 ["Amazon Simple Queue Service (Amazon SQS)","Amazon Simple Queue Service (Amazon SQS)\n\nis a fully managed message queuing service and  that makes it easy to decouple your applications  from demand.\n\nWhat that means is that it  allows messages to build up in a queue until the processing server that processes  those messages can catch up with demand."],
-["AWS Batch","Batch processing, ML model training, and analysis at any scale"],
+["AWS Batch","Batch processing, ML model training, and analysis at any scale, \n\nAWS Batch lets developers, scientists, and engineers efficiently run hundreds of thousands of batch and ML computing jobs while optimizing compute resources, so you can focus on analyzing results and solving problems. Use Cases Finanical service analysis,drug testing,train ML models"],
 ["Amazon EC2",""],
-["AWS Elastic Beanstalk","an easy-to-use service for deploying and scaling web applications and services\n\n developed with Java, NET, PHP, Node. js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS."],
-["AWS Lambda","AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume—there is no charge when your code is not running"],
-["Amazon Lightsail","Build applications and websites fast with low-cost, pre-configured cloud resources"],
+["AWS Elastic Beanstalk","an easy-to-use service for deploying and scaling web applications and services\n\n developed with Java, NET, PHP, Node. js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.\n\nSimilar to Lightsail which is a more simple application rather that Beanstalks powerful flexablity on configuration i.e Autoscaling "],
+["AWS Lambda","AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume—there is no charge when your code is not running\n\nUse case include:\n1)When a photo is uploaded to s3 trigger a lambda function to resize the photo"],
+["Amazon Lightsail","Build applications and websites fast with low-cost, pre-configured cloud resources\n\nSimilar to Elastic Beanstalk which offers more flexability i.e Autoscaling on configuration qhwew Lightsail is a more simple application"],
 ["Amazon WorkSpaces","is a fully managed secure desktop as a service."],
 ["Amazon Elastic Container Service (Amazon ECS)","Run highly secure, reliable, and scalable containers"],
 ["Amazon Elastic Kubernetes Service (Amazon EKS)","The most trusted way to start, run, and scale Kubernetes"],
-["AWS Fargate","Serverless compute for containers\n\nIt differs from EC2 in that - Amazon EC2 manages or deploys your own EC2 instances to effectively run applications. Fargate AWS allows you to run containers without the need for EC2 instances. "],
+["AWS Fargate","Serverless compute for containers\n\nIt differs from EC2 in that - Amazon EC2 manages or deploys your own EC2 instances to effectively run applications. \nFargate AWS allows you to run containers without the need for EC2 instances. "],
 ["Amazon Aurora","a fully managed MySQL- and PostgreSQL-compatible relational database built for the cloud that combines the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open source databases."],
 ["Amazon DynamoDB","Amazon no sql database"],
 ["Amazon ElastiCache","Unlock microsecond latency and scale with in-memory caching"],
-["Amazon RDS","Amazon Relational Database Service (RDS)\n\nA relational database is a collection of data items with pre-defined relationships between them. These items are organized as a set of tables with columns and rows.\n\n if you want full control, you need extra features i.e Oracle feature deploy on ec2\n\nAdvatanges include \n\nits highly optimized, \nno dba needed,\nrds deals with backupsi\nrds deals with patching , \nnyou deal with optimization and tuning rather than database admin"],
+["Amazon RDS","Amazon Relational Database Service (RDS)\n\nA relational database is a collection of data items with pre-defined relationships between them. These items are organized as a set of tables with columns and rows.\n\nIf you want full control, you need extra features i.e Oracle feature deploy on ec2\n\nAdvantanges include: \n\n1)its highly optimized, \n2)no dba needed,\n3)rds deals with backups\n4)rds deals with patching , \n5)you deal with optimization and tuning rather than database admin\n\n\nYou have 3 options for a database\n1)EC2 -ultimate control\n2)RDS -to reduce the management overhead of running a database in EC2. You click a few buttons, and you get a database ready to store data. Amazon handles all the fiddly bits—provisioning instances, replication and backups, maintenance and updates. \n3)Aurora a cloud-first database. Amazon still handles all the fiddly work of managing the database—but under the hood, it’s quite different.it scales faster,scales further , is more durable,is more resilient.It also works Serverless i.e run Aurora without having to guess how many compute nodes you need. It automatically starts and stops nodes to match the needs of your application. It scales up to meet a spike in demand and scales down when things are quiet.\n\nThe limitations on Aurora it support only 2 database engines where RDS has 5 (including MariaDB,Oracle or Microsfot Sql server)"],
 ["Amazon Redshift","Amazon Redshift uses SQL to analyze structured and semi-structured data across data warehouses, operational databases, and data lakes, using AWS-designed hardware and machine learning to deliver the best price performance at any scale"],
 ["AWS CodeBuild","Build and test code with automatic scaling"],
 ["AWS CodeCommit","Is a git repository just like  GitHub, and it's running in the AWS cloud"],
 ["AWS CodeDeploy","Automate code deployment to maintain application uptime"],
 ["AWS CodePipeline","A CI/CD"],
-["AWS CodeStar","Quickly develop, build, and deploy applications on AWS"],
+["AWS CodeStar","Quickly develop, build, and deploy applications on AWS. \nIt makes  it easy to develop and deploy applications  to AWS.\n\nIt can manage the entire CI/CD pipeline  for you. It has a project management dashboard,  including an integrated issue tracking  capability powered by Atlassian Jira software."],
 ["Amazon Connect","With Amazon Connect, you can set up a contact center in minutes that can scale to support millions of customers."],
-["AWS Auto Scaling","Application scaling to optimize performance and costs\n\nAWS Auto Scaling monitors your applications and automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost. Using AWS Auto Scaling, it’s easy to setup application scaling for multiple resources across multiple services in minutes"],
+["AWS Auto Scaling","Application scaling to optimize performance and costs\n\nAWS Auto Scaling monitors your applications and automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost. \n\nAdvantages \n1)it’s easy to setup application scaling for multiple resources across multiple services in minutes\n2)Make smart scaling decisions\n3)Automatically maintan performance\n4)pay only for what you need "],
 ["AWS Budgets","AWS Budgets lets you set custom cost and usage budgets that alert you when your budget thresholds are exceeded (or forecasted to exceed)."],
 ["AWS CloudFormation","provides a common language to describe and provision all the infrastructure resources in your environment in a safe, repeatable way"],
 ["AWS CloudTrail","Track user activity and API usage, good for security"],
 ["Amazon CloudWatch","Observe and monitor resources and applications on AWS, on premises, and on other clouds"],
-["AWS Config","Record and evaluate configurations of your AWS resources"],
+["AWS Config","Record and evaluate configurations of your AWS resources \nThis greatly simplifies compliance auditing  security analysis, change management and control,and also operational troubleshooting.\n\nUse cases:\n1)Discovery -AWS Config will discover resources that exist in your account, record their current configuration and capture any changes to these configurations.\n2)Continous audit and compilance"],
 ["AWS Cost and Usage Report","contains the most comprehensive set of cost and usage data available. \nYou can use Cost and Usage Reports to publish your AWS billing reports to an Amazon Simple Storage Service (Amazon S3) bucket that you own. \nYou can receive reports that break down your costs by the hour, day, or month, by product or product resource, or by tags that you define yourself."],
-["Amazon EventBridge (Amazon CloudWatch Events)","Amazon EventBridge is a serverless event bus service that makes it easy to connect your applications with data from a variety of sources. \nEventBridge delivers a stream of real-time data from your own applications, software-as-a-service (SaaS) applications, and AWS services and routes that data to targets such as AWS Lambda. \nYou can set up routing rules to determine where to send your data to build application architectures that react in real time to all of your data sources. \nEventBridge enables you to build event-driven architectures that are loosely coupled and distributed."],
+["Amazon EventBridge (Amazon CloudWatch Events)","Amazon S3 can send events to Amazon EventBridge whenever certain events happen in your bucket. \n\nEventBridge makes it easier to connect applications. You can ingest, filter, transform and deliver events without writing custom code.\n\na good example is a website with an order service using Eventbridge you can decouple application and services to speed up the process,improve monitoring and make it easy to develop. \n\nhttps://www.youtube.com/watch?v=TXh5oU_yo9M "],
 ["AWS License Manager","Manage your software licenses and fine-tune licensing costs"],
-["AWS Managed Services","AWS Managed Services (AMS) helps you adopt AWS at scale and operate more efficiently and securely. \nWe leverage standard AWS services and offer guidance and execution of operational best practices with specialized automations, skills, and experience that are contextual to your environment and applications"],
+["AWS Managed Services","in short - AMS is an enterprise service that provides ongoing management of your AWS infrastructure.\n\nAWS Managed Services (AMS) helps you adopt AWS at scale and operate more efficiently and securely. \nAMS extends your team with operational capabilities including monitoring, incident detection and management, security, patch, backup, and cost optimization.\n\n Benefits:\n1)Security - 150+ managed guardrails and security checks\n2)Incident managment - 80% of indidents proactivley detected and notfied\n3)Automation -\n4)Cost Savings\n5)Aws expertise - 24*7 global coverage"],
 ["AWS Organizations","Centrally manage your environment as you scale your AWS resources"],
 ["AWS Secrets Manager","Centrally manage the lifecycle of secrets\nAWS Secrets Manager helps you manage, retrieve, and rotate database credentials, API keys, and other secrets throughout their lifecycles."],
-["AWS Systems Manager","Gain operational insights into resources on AWS, on premises, and on other clouds"],
+["AWS Systems Manager","Really a dashboard to view and manage your resources. \n\nGain operational insights into resources on AWS, on premises, and on other clouds\n\nUse cases:\nCentralize operational data\nAutomatically resolve application issues\nAutomatically resolve application issues\nAutomatically resolve application issues"],
 ["AWS Systems Manager Parameter Store","provides secure, hierarchical storage for configuration data management and secrets management. \nYou can store data such as passwords, database strings, Amazon Machine Image (AMI) IDs, and license codes as parameter values. You can store values as plain text or encrypted data. \nYou can reference Systems Manager parameters in your scripts, commands, SSM documents, and configuration and automation workflows by using the unique name that you specified when you created the parameter"],
 ["AWS Trusted Advisor","Reduce costs, improve performance, improve security"],
 ["Amazon API Gateway","Create, maintain, and secure APIs at any scale"],
@@ -275,9 +275,9 @@ services=[
 ["Amazon Route 53","dns"],
 ["Amazon VPC","Amazon Virtual Private Cloud (Amazon VPC) enables you to launch AWS resources into a virtual network that you've defined."],
 ["AWS Artifact","Access AWS and ISV security and compliance reports"],
-["AWS Certificate Manager (ACM)",""],
+["AWS Certificate Manager (ACM)","Provision and manage SSL/TLS certificates with AWS services and connected resources\n\nACM removes the time-consuming manual process of purchasing, uploading, and renewing SSL/TLS certificates."],
 ["AWS CloudHSM","Provision and manage SSL/TLS certificates with AWS services and connected resources"],
-["Amazon Cognito","Implement secure, frictionless customer identity and access management that scales\n you can add user sign-up and sign-in features and control access to your web and mobile applications.\nAmazon Cognito provides an identity store that scales to millions of users, supports social and enterprise identity federation, and offers advanced security features to protect your consumers and business.\n Built on open identity standards,\n Amazon Cognito supports various compliance regulations and integrates with frontend and backend development resources."],
+["Amazon Cognito","Amazon Cognito provides authentication, authorization, and user management for your web and mobile apps. \n\nYour users can sign in directly with a user name and password, or through a third party such as Facebook, Amazon, Google or Apple."],
 ["Amazon Detective","Analyze and visualize security data to investigate potential security issues"],
 ["Amazon GuardDuty","Protect your AWS accounts with intelligent threat detection"],
 ["AWS Identity and Access Management (IAM)","Securely manage identities and access to AWS services and resources"],
@@ -286,9 +286,9 @@ services=[
 ["Amazon Macie","Discover and protect your sensitive data at scale.\n\nAmazon Macie is a data security service that uses machine learning (ML) and pattern matching to discover and help protect your sensitive data."],
 ["AWS Shield","Maximize application availability and responsiveness with managed DDoS protection"],
 ["AWS WAF","Protect your web applications from common exploits"],
-["AWS Backup","AWS Backup is a fully-managed service that makes it easy to centralize and automate data protection across AWS services, in the cloud, and on premises.\nUsing this service, you can configure backup policies and monitor activity for your AWS resources in one place."],
-["Amazon Elastic Block Store (Amazon EBS)","Easy to use, high performance block storage at any scale"],
-["Amazon Elastic File System (Amazon EFS)","Serverless, fully elastic file storage\n\nautomatically grows and shrinks as you add and remove files with no need for management or provisioning."],
+["AWS Backup","AWS Backup is a fully-managed service that makes it easy to centralize and automate data protection across AWS services, in the cloud, and on premises.\n\nUsing this service, you can configure backup policies and monitor activity for your AWS resources in one place."],
+["Amazon Elastic Block Store (Amazon EBS)","Easy to use, high performance block storage at any scale\n\nDefault Filesytem\n\nIts Cousin EFS offers network like storage"],
+["Amazon Elastic File System (Amazon EFS)","Serverless, fully elastic file storage\n\nautomatically grows and shrinks as you add and remove files with no need for management or provisioning.\n\nOffers Network like Storage"],
 ["Amazon S3","Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance."],
 ["Amazon S3 Glacier","Long-term, secure, durable storage classes for data archiving at the lowest cost and milliseconds access"],
 ["AWS Snowball Edge","AWS Snowball Edge is a type of Snowball device with on-board storage and compute power for select AWS capabilities. Snowball Edge can do local processing and edge-computing workloads in addition to transferring data between your local environment and the AWS Cloud."],
@@ -337,7 +337,7 @@ if user_input=="s":
         print()
         print()
         user_result=input("Did you get that right(y/n)")
-        if user_result=="n":
+        if user_result!="y":
             temp_list=[i[0],i[1]]
             try_again.append(temp_list)
         input("....press enter to continue.......")
@@ -358,7 +358,7 @@ if user_input=="s":
         print()
         print()
         user_result2=input("Did you get that right(y/n)")
-        if user_result2=="n":
+        if user_result2!="y":
             temp_list=[j[0],j[1]]
             you_need_to_work_on.append(temp_list)
     print()
