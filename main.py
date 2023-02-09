@@ -304,9 +304,9 @@ print (f"a more focused set of questions (f) ")
 user_input=input("")
 sleep_time=int(input("please enter the number of seconds you want to sleep for between question and answer?"))
 
-
 if user_input=="s":
 
+    try_again=[]
     for i in services:
         os.system('clear')
         print ("Quesion - ",count,"/",number_of_services)
@@ -318,8 +318,50 @@ if user_input=="s":
         print()
         print()
         print()
+        user_result=input("Did you get that right(y/n)")
+        if user_result=="n":
+            temp_list=[i[0],i[1]]
+            try_again.append(temp_list)
         input("....press enter to continue.......")
         print()
+    print("Here is a second go at those questions you struggled with")
+    number_of_try_again=len(try_again)
+    you_need_to_work_on=[]
+    count_try_again=1
+    for j in try_again:
+        os.system('clear')
+        print ("Quesion - ",count_try_again,"/",number_of_try_again)
+        count_try_again+=1
+        print("=========")
+        print ("# Question - ", j[0])
+        time.sleep(sleep_time)
+        print ("# Answer - ", j[1])
+        print()
+        print()
+        print()
+        user_result2=input("Did you get that right(y/n)")
+        if user_result2=="n":
+            temp_list=[j[0],j[1]]
+            you_need_to_work_on.append(temp_list)
+    print()
+    print("Summary")
+    print("=======")
+    print ("This is the end of the test")
+    first_round=number_of_services-number_of_try_again
+    print (f"There were  {number_of_services} questions")
+    print(f"First round you got {first_round} correct")
+    second_round=number_of_try_again-len(you_need_to_work_on)
+    print (f"Second round you got {second_round} correct")
+    to_work_on=len(you_need_to_work_on)
+    print ()
+    if to_work_on >0:
+        print (f"These are the focus areas as you got these {to_work_on} wrong twice")
+        print()
+        for k in you_need_to_work_on:
+            print (k[0])
+    else:
+        print ("Congrats you did well, no extra revision needed :)")
+
 
 elif user_input=="f":
     list_of_sections=[]
