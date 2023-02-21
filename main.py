@@ -353,13 +353,14 @@ if user_input=="s":
         print()
         print()
         print()
-        user_result=input("Did you get that right(y/n)")
+        user_result=input("Did you get that right(y/n) (default=n)")
         if user_result!="y":
             temp_list=[i[0],i[1]]
             try_again.append(temp_list)
         input("....press enter to continue.......")
         print()
     print("Here is a second go at those questions you struggled with")
+    input("Press any button to continue")
     number_of_try_again=len(try_again)
     you_need_to_work_on=[]
     count_try_again=1
@@ -374,7 +375,7 @@ if user_input=="s":
         print()
         print()
         print()
-        user_result2=input("Did you get that right(y/n)")
+        user_result2=input("Did you get that right(y/n) (default=n) ")
         if user_result2!="y":
             temp_list=[j[0],j[1]]
             you_need_to_work_on.append(temp_list)
@@ -393,7 +394,9 @@ if user_input=="s":
         print (f"These are the focus areas as you got these {to_work_on} wrong twice")
         print()
         for k in you_need_to_work_on:
+            print ("=========")
             print (k[0])
+            print (k[1][:150])
     else:
         print ("Congrats you did well, no extra revision needed :)")
 
