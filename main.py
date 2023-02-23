@@ -170,7 +170,7 @@ questions=[
 ["What is Comprehend?","Derive and understand valuable insights from text within documents","Machine Learning"],
 ["What is Translate?","Fluent and accurate machine translation","Machine Learning"],
 ["What is Transcribe?","Automatically convert speech to text","Machine Learning"],
-["What is the command to get help on S£ CLI?","aws s3 help or aws s3api help","CLI"],
+["What is the command to get help on S3 CLI?","aws s3 help or aws s3api help","CLI"],
 ["Which IS is the CLI installed on my default?","Linux AMI not unbuntu ","CLI"],
 ["Which service provide information on ongoing and upcoming sceduleded events that can effect an aws account?","Aws personal health dashboard","Buisness Case"],
 ["Which 4 main areas in which AWS customer are realizing value by moving to cloud computing?","Cost Saving\nStaff Productivity\nOperational Resilience\nBuisness Agility","Buisness Case"],
@@ -186,7 +186,7 @@ questions=[
 ["Which service can track resource change and establish compilance?","Aws config","Arch and Compilance"],
 ["What is Loosley coupled Application?","A loosely coupled workload entails the processing of a large number of smaller jobs. Generally, the smaller job runs on one node, either consuming one process or multiple processes with shared memory parallelization (SMP) for parallelization within that node.\n\nLoosely coupled applications are found in many areas, including Monte Carlo simulations, image processing, genomics analysis, and Electronic Design Automation (EDA).","Arch and Compilance"],
 ["What is Tightly coupled Application?","Tightly coupled applications consist of parallel processes that are dependent on each other to carry out the calculation. Unlike a loosely coupled computation, all processes of a tightly coupled simulation iterate together and require communication with one another.\n\nExamples of tightly coupled HPC workloads include: computational fluid dynamics, weather prediction, and reservoir simulation. ","Arch and Compilance"],
-["How much data can i store in s3?","The total volume of data and number of objects you can store in Amazon S3 are unlimited.\n\nIndividual Amazon S3 objects can range in size from a minimum of 0 bytes to a maximum of 5 TB. \nThe largest object that can be uploaded in a single PUT is 5 GB. For objects larger than 100 MB, customers should consider using the multipart upload capability.","s3"],
+["How much data can i store in s3?","The total volume of data and number of objects you can store in Amazon S3 are unlimited.\n\nIndividual Amazon S3 objects can range in size from a minimum of 0 bytes to a maximum of 5 TB. \nThe largest object that can be uploaded in a single PUT is 5 GB. For objects larger than 100 MB, customers should consider using the multipart upload capability.","S3"],
 ["What pricing option is best for applications with short-term spiky or unpredicatable workloads","On demand instances","EC2"],
 ["What pricing option is best for a new customer piloting a customer facing application for one month","On demand instances","EC2"],
 ["What pricing option is the default?","On-demand","EC2"],
@@ -249,13 +249,13 @@ services=[
 ["Amazon Athena","Analyze petabyte-scale data where it lives with ease and flexibility"],
 ["Amazon Kinesis","Easily collect, process, and analyze video and data streams in real time\n\nFor Example a Social Media Stream which alongside Lambda could take out the hastags put in a  DB and make them avaliable for users to browse"],
 ["Amazon QuickSight","a business  intelligence reporting tool. Similar to tableau,"],
-["Amazon Simple Notification Service (Amazon SNS)","Amazon Simple Notification Service (Amazon SNS)\n\nis a flexible, fully managed  pub-sub messaging service. What that  means is that you can create a topic,  and users can subscribe to that topic, and  when you publish a message to that topic,  the users that have subscribed to that topic  will receive that message, it can also be used  for push notifications to mobile devices"],
+["Amazon Simple Notification Service (Amazon SNS)","Amazon Simple Notification Service (Amazon SNS)\n\nis a flexible, fully managed  publish/subscribe messaging service. What that  means is that you can create a topic,  and users can subscribe to that topic, and  when you publish a message to that topic,  the users that have subscribed to that topic  will receive that message, it can also be used  for push notifications to mobile devices"],
 ["Amazon Simple Queue Service (Amazon SQS)","Amazon Simple Queue Service (Amazon SQS)\n\nis a fully managed message queuing service and  that makes it easy to decouple your applications  from demand.\n\nWhat that means is that it  allows messages to build up in a queue until the processing server that processes  those messages can catch up with demand."],
 ["AWS Batch","Batch processing, ML model training, and analysis at any scale, \n\nAWS Batch lets developers, scientists, and engineers efficiently run hundreds of thousands of batch and ML computing jobs while optimizing compute resources, so you can focus on analyzing results and solving problems. Use Cases Finanical service analysis,drug testing,train ML models"],
 ["Amazon EC2",""],
 ["AWS Elastic Beanstalk","an easy-to-use service for deploying and scaling web applications and services\n\n developed with Java, NET, PHP, Node. js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.\n\nSimilar to Lightsail which is a more simple application rather that Beanstalks powerful flexablity on configuration i.e Autoscaling "],
 ["AWS Lambda","AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume—there is no charge when your code is not running\n\nUse case include:\n1)When a photo is uploaded to s3 trigger a lambda function to resize the photo"],
-["Amazon Lightsail","Build applications and websites fast with low-cost, pre-configured cloud resources\n\nSimilar to Elastic Beanstalk which offers more flexability i.e Autoscaling on configuration qhwew Lightsail is a more simple application"],
+["Amazon Lightsail","Build applications and websites fast with low-cost, pre-configured cloud resources\n\nSimilar to Elastic Beanstalk which offers more flexability i.e Autoscaling on configuration. \nLightsail is a more simple application"],
 ["Amazon WorkSpaces","is a fully managed secure desktop as a service."],
 ["Amazon Elastic Container Service (Amazon ECS)","Run highly secure, reliable, and scalable containers"],
 ["Amazon Elastic Kubernetes Service (Amazon EKS)","The most trusted way to start, run, and scale Kubernetes"],
@@ -283,7 +283,7 @@ services=[
 ["AWS Managed Services","in short - AMS is an enterprise service that provides ongoing management of your AWS infrastructure.\n\nAWS Managed Services (AMS) helps you adopt AWS at scale and operate more efficiently and securely. \nAMS extends your team with operational capabilities including monitoring, incident detection and management, security, patch, backup, and cost optimization.\n\n Benefits:\n1)Security - 150+ managed guardrails and security checks\n2)Incident managment - 80% of indidents proactivley detected and notfied\n3)Automation -\n4)Cost Savings\n5)Aws expertise - 24*7 global coverage"],
 ["AWS Organizations","Centrally manage your environment as you scale your AWS resources"],
 ["AWS Secrets Manager","Centrally manage the lifecycle of secrets\nAWS Secrets Manager helps you manage, retrieve, and rotate database credentials, API keys, and other secrets throughout their lifecycles."],
-["AWS Systems Manager","Really a dashboard to view and manage your resources. \n\nGain operational insights into resources on AWS, on premises, and on other clouds\n\nUse cases:\nCentralize operational data\nAutomatically resolve application issues\nAutomatically resolve application issues\nAutomatically resolve application issues"],
+["AWS Systems Manager","Really a dashboard to view and manage your resources. \n\nGain operational insights into resources on AWS, on premises, and on other clouds\n\nUse cases:\nCentralize operational data\nAutomatically resolve application issues"],
 ["AWS Systems Manager Parameter Store","provides secure, hierarchical storage for configuration data management and secrets management. \nYou can store data such as passwords, database strings, Amazon Machine Image (AMI) IDs, and license codes as parameter values. You can store values as plain text or encrypted data. \nYou can reference Systems Manager parameters in your scripts, commands, SSM documents, and configuration and automation workflows by using the unique name that you specified when you created the parameter"],
 ["AWS Trusted Advisor","Reduce costs, improve performance, improve security"],
 ["Amazon API Gateway","Create, maintain, and secure APIs at any scale"],
@@ -402,38 +402,58 @@ if user_input=="s":
 
 
 elif user_input=="f":
-    list_of_sections=[]
-    for i in questions:
-        try:
-           list_of_sections.append(i[2])
-        except:
-            pass
-    unique_sections=set(list_of_sections)
-    count=0
-    for j in unique_sections:
-        print (count," ",j)
-        count+=1
+    section_already_worked_on=[]
+    while True:
+        list_of_sections=[]
+        for i in questions:
+            try:
+                list_of_sections.append(i[2])
+            except:
+                pass
+        unique_sections=set(list_of_sections)
+        count=0
+        for j in unique_sections:
+            count_instances=0
+            for k in list_of_sections:
+                if k == j:
+                    count_instances+=1
+            if j in section_already_worked_on:
+                print (count,end=" ")
+                #this makes the output green
+                print("\033[1;32;40m",j,end=" ")
+                print ("Questions=",count_instances," -Done",end="")
+                #this makes the output black again
+                print("\033[0;37;40m")
+            else:
+                print (count,end=" ")
+                #this makes the output "normal"
+                print("\033[0;37;40m",j,end=" ")
+                print ("Questions=",count_instances)
+            count+=1
 
-    user_input_section_choice_num=int(input("enter a number to check..."))
-    user_input_section_choice_word_list=list(unique_sections)
-    user_input_section_choice_word=user_input_section_choice_word_list[user_input_section_choice_num]
-    for all in questions:
-        try:
-            #breakpoint()
-            if all[2] == user_input_section_choice_word:
-                os.system('clear')
-                print ("Section -",all[2])
-                print("=========")
-                print ("# Question - ", all[0])
-                time.sleep(sleep_time)
-                print ("# Answer - ", all[1])
-                print()
-                print()
-                print()
-                input("....press enter to continue.......")
-                print()
-        except:
-            pass
+        #this print clears down any oustanding colour formatting before continuning
+        print("\033[0;37;40m",end=" ")
+        user_input_section_choice_num=int(input("enter a number to check..."))
+        user_input_section_choice_word_list=list(unique_sections)
+        user_input_section_choice_word=user_input_section_choice_word_list[user_input_section_choice_num]
+        section_already_worked_on.append(user_input_section_choice_word)
+        for all in questions:
+            try:
+                #breakpoint()
+                if all[2] == user_input_section_choice_word:
+                    os.system('clear')
+                    print ("Section -",all[2])
+                    print("=========")
+                    print ("# Question - ", all[0])
+                    time.sleep(sleep_time)
+                    print ("# Answer - ", all[1])
+                    print()
+                    print()
+                    print()
+                    input("....press enter to continue.......")
+                    print()
+            except:
+                pass
 
     
 else: 
