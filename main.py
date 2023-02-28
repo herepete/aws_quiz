@@ -155,13 +155,13 @@ questions=[
 ["What provides you with a better  insight to the performance of your application  and the underlying services that it relies upon. Including analyze and debug?","X-Ray -Analyze and debug production and distributed applications","Development tools"],
 ["What is  an integrated development environment running in  the AWS cloud?","AWS Cloud9 \n\n A cloud IDE for writing, running, and debugging code","Development tools"],
 ["What can build, test, and then deploy  your code every time a code change occurs?","CodePipeline \n\n Automate continuous delivery pipelines for fast and reliable updates","Development tools"],
-["What is Cloud9?","A cloud IDE for writing, running, and debugging code","Development tools - Terminology"],
-["What is CodeStar?","Quickly develop, build, and deploy applications on AWS","Development tools - Terminology"],
-["What is X-Ray?","Analyze and debug production and distributed applications","Development tools - Terminology"],
-["What is Codecommit?","a git repository just like  GitHub, and it's running in the AWS cloud.","Development tools - Terminology"],
-["What is CodeBuild?","Build and test code with automatic scaling","Development tools - Terminology"],
-["What is CodePipeline?","A CI/CD","Development tools - Terminology"],
-["What is Code Deploy?","Automate code deployment to maintain application uptime","Development tools - Terminology"],
+["What is Cloud9?","A cloud IDE for writing, running, and debugging code","Development tools"],
+["What is CodeStar?","Quickly develop, build, and deploy applications on AWS","Development tools"],
+["What is X-Ray?","Analyze and debug production and distributed applications","Development tools"],
+["What is Codecommit?","a git repository just like  GitHub, and it's running in the AWS cloud.","Development tools"],
+["What is CodeBuild?","Build and test code with automatic scaling","Development tools"],
+["What is CodePipeline?","A CI/CD","Development tools"],
+["What is Code Deploy?","Automate code deployment to maintain application uptime","Development tools"],
 ["What is Deeplens?","The world’s first deep learning enabled video camera for developers","Machine Learning"],
 ["What is SageMaker?","It allows you to build and train your own  machine learning models and then deploy them to  the AWS cloud and use them as a back end for your applications.","Machine Learning"],
 ["What is Amazon Rekogintion?","provides deep  learning-based analysis of video and images.  ","Machine Learning"],
@@ -242,6 +242,26 @@ questions=[
 ["An archiving system needs to be built to store terabytes of data what the best priced option?","S3 Glacier","S3"],
 ["What allows you to run one time queries on data in S3?","Amazon Athena","S3"],
 ["What can help encrypt data stored on S3?","AWS KMS (Key managment service)","S3"],
+["Which AWS dashboard displays relevant and timely information to help users manage events in progress, and provides proactive notifications to help plan for scheduled activities?","Amazon Cloudwatch dashboard","AWS Managment and Governance"],
+["A company needs an AWS service that can continuously monitor the company's AWS account. If there are any changes to the architecture, members of the team must be contacted.\nWhich service will meet these requirements?","AWS Config","AWS Managment and Governance"],
+["A Cloud Practitioner requires a simple method to identify if unrestricted access to resources has been allowed by security groups. Which service can the Cloud Practitioner use?","AWS Trusted adviser","AWS Managment and Governance"],
+["Which AWS service should a Cloud Practitioner use to automate conﬁguration management using Puppet?","Cloudformation","AWS Managment and Governance"],
+["A Service Control Policy (SCP) is used to manage the maximum available permissions and is associated with which service?","AWS Organizations","AWS Managment and Governance"],
+["What AWS service, tool, or feature can help companies identify underutilized Amazon EC2 instances and reduce their costs?","Trusted Adviser","AWS Managment and Governance"],
+["Which of the following can be used to identify a specific user who terminated an Amazon RDS DB instance?","CloudTrail","AWS Managment and Governance"],
+["Which Amazon EC2 tool acts as a virtual firewall to control inbound and outbound traffic to an EC2 instance?","Security Group","Networking and Content Delivery"],
+["What describes an Availability Zone in the AWS Cloud?","One or more physical datacenters","Networking and Content Delivery"],
+["A user has limited knowledge of AWS services, but wants to quickly deploy a scalable Node.js application in an Amazon VPC.\nWhich service should be used to deploy the application?","Elastic Beanstalk","Compute"],
+["What service can run docker?","Amazon ECS (Elastic Compute service)","Compute"],
+["A company is migrating virtual machines (VMs) from their data center to the AWS Cloud. The company plans to deploy these migrated machines on Amazon EC2.\nWhich cloud computing model will the company use for this operation?","IaaS","Other"],
+["Which Dashboard displays relevant and timely information to help users manage events in progress, and provides proactive notifications to help plan for scheduled activities?","Personal health dashboard","Dashboards"],
+["Which Dashboard shows the current status of services across regions?","Service health dashboard","Dashboards"],
+["Which Dashboard shows monitoring performance related information for your infrastructure and resources","Amazon CloudWatch dashboard","Dashboards"],
+["Where would you use on-demand instances?","\nGood for users that want the low cost and flexibility of EC2 without any up-front payment or long-term commitment.\nApplications with short term, spiky, or unpredictable workloads that cannot be interrupted.\nApplications being developed or tested on EC2 for the first time.","Pricing"],
+["Where would you use reserved instances?","Applications with steady state or predictable usage.\nApplications that require reserved capacity.\nUsers can make up-front payments to reduce their total computing costs even further.\nStandard Reserved Instances (RIs) provide up to 75% off on-demand price.","Pricing"],
+["Where would you use Spot instances?","Applications that have flexible start and end times.\nApplications that are only feasible at very low compute prices.\nUsers with an urgent need for a large amount of additional compute capacity.\nIf Amazon terminate your instances you do not pay, if you terminate you pay for the hour.","Pricing"],
+["Where would you use Dedicated hosts?","Physical servers dedicated just for your use.\nYou then have control over which instances are deployed on that host.\nAvailable as On-Demand or with Dedicated Host Reservation.\nUseful if you have server-bound software licenses that use metrics like per-core, per-socket, or per-VM.\nEach dedicated host can only run one EC2 instance size and type.\nGood for regulatory compliance or licensing requirements.\nPredictable performance.\nComplete isolation.\nMost expensive option.\nBilling is per host.","Pricing"],
+["Where would you use Dedicated instances?","Virtualized instances on hardware just for you.\nAlso uses physically dedicated EC2 servers.\nDoes not provide the additional visibility and controls of dedicated hosts (e.g. how instances are placed on a server).\nBilling is per instance.\nMay share hardware with other non-dedicated instances in the same account.\nAvailable as On-Demand, Reserved Instances, and Spot Instances.\nCost additional $2 per hour per region.","Pricing"],
 ]
 
 services=[
@@ -255,6 +275,10 @@ services=[
 ["AWS Elastic Beanstalk","an easy-to-use service for deploying and scaling web applications and services\n\n developed with Java, NET, PHP, Node. js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.\n\nSimilar to Lightsail which is a more simple application rather that Beanstalks powerful flexablity on configuration i.e Autoscaling "],
 ["AWS Lambda","AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume—there is no charge when your code is not running\n\nUse case include:\n1)When a photo is uploaded to s3 trigger a lambda function to resize the photo"],
 ["Amazon Lightsail","Build applications and websites fast with low-cost, pre-configured cloud resources\n\nSimilar to Elastic Beanstalk which offers more flexability i.e Autoscaling on configuration. \nLightsail is a more simple application"],
+["Amazon WorkSpaces","is a fully managed secure desktop as a service."],
+["Amazon Elastic Container Service (Amazon ECS)","Run highly secure, reliable, and scalable containers"],
+["Amazon Elastic Kubernetes Service (Amazon EKS)","The most trusted way to start, run, and scale Kubernetes"],
+["AWS Fargate","Serverless compute for containers\n\nIt differs from EC2 in that - Amazon EC2 manages or deploys your own EC2 instances to effectively run applications. \nFargate AWS allows you to run containers without the need for EC2 instances. "],
 ["Amazon WorkSpaces","is a fully managed secure desktop as a service."],
 ["Amazon Elastic Container Service (Amazon ECS)","Run highly secure, reliable, and scalable containers"],
 ["Amazon Elastic Kubernetes Service (Amazon EKS)","The most trusted way to start, run, and scale Kubernetes"],
@@ -456,8 +480,4 @@ elif user_input=="f":
                     print()
             except:
                 pass
-
-    
-else: 
-    print ("Invalid input")
 
